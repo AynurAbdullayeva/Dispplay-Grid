@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    height: 90vh;
+    border: 1px solid white;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    margin: 0 auto;
+    gap: 20px;
+    grid-template-areas:
+        "item1 item1 item2 item3"
+        "item1 item1 item4 item5";
+}
+
+.item1 {
+    grid-area: item1;
+    border: 1px solid gray;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Triglav.jpg/250px-Triglav.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.item2 {
+    grid-area: item2;
+    border: 1px solid gray;
+    background-image: url(https://s13.postimg.cc/mty9shn2v/punta-bariloche-arjantin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item3 {
+    grid-area: item3;
+    border: 1px solid gray;
+    background-image: url(https://s13.postimg.cc/9d1b9xa9z/aiguille-noire-de-peuterey-italya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4 {
+    grid-area: item4;
+    border: 1px solid rgb(171, 169, 169);
+    background-image: url(https://cdn.create.vista.com/api/media/small/243674048/stock-photo-starry-sky-machhepuchare-annapurna-base);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item5 {
+    grid-area: item5;
+    border: 1px solid white;
+    background-color: rgb(243, 239, 239);
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    color: rgb(106, 104, 104);
+
+}
+
+.item5 i {
+    font-size: 30px;
+}
+
+.item5 h3 {
+    color: black;
+}
